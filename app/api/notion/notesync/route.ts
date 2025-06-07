@@ -1,6 +1,6 @@
 // ✅ API route returning 3 mock notes
 
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import { listNotes } from "@/packages/integrations/notion/notesync/notesync.functions";
 
 export async function GET() {

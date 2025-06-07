@@ -17,7 +17,7 @@ const Userpage = () => {
 
   const inputRef = useRef<HTMLInputElement>(null);
 
-  const addEvent = (event: MouseEvent) => {
+  const addEvent = () => {
     const task = inputRef.current?.value.trim();
     if (task) {
       const newTodo: Todo = {

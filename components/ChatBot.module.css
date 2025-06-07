@@ -1,0 +1,129 @@
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  height: 90vh;
+  margin: auto;
+  background: linear-gradient(to bottom right, #fefefe, #f3f4f6);
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.header {
+  padding: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to right, #6366f1, #8b5cf6);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.messageArea {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+  background-color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  scroll-behavior: smooth;
+}
+
+.message {
+  max-width: 70%;
+  padding: 14px 20px;
+  border-radius: 20px;
+  line-height: 1.4;
+  font-size: 15px;
+  position: relative;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.userMessage {
+  align-self: flex-end;
+  background: linear-gradient(to right, #60a5fa, #3b82f6);
+  color: white;
+  border-bottom-right-radius: 0;
+}
+
+.aiMessage {
+  align-self: flex-start;
+  background: #ffffff;
+  color: #111827;
+  border-bottom-left-radius: 0;
+  border: 1px solid #e5e7eb;
+}
+
+.inputForm {
+  padding: 16px;
+  background-color: #fff;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: center;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+}
+
+.textInput {
+  flex: 1;
+  padding: 12px 20px;
+  border-radius: 9999px;
+  border: 1px solid #d1d5db;
+  background-color: #f9fafb;
+  font-size: 15px;
+  padding-right: 50px;
+  transition: box-shadow 0.2s ease;
+}
+
+.textInput:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+}
+
+.sendButton {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(to right, #6366f1, #8b5cf6);
+  border: none;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px rgba(99, 102, 241, 0.2);
+}
+
+.sendButton:hover {
+  transform: translateY(-50%) scale(1.05);
+}
+.back-div-note{ 
+    background-color: white;
+    margin-left:2%;
+    margin-left: -800px;
+}
+.back-btn-note
+{
+    margin-top: 25px;
+    border: 2px solid black;
+    width:150px;
+    height:50px;
+    border-radius: 25px;
+    background-color: darkslateblue;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}

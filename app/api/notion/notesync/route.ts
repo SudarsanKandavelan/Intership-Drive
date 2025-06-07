@@ -7,7 +7,7 @@ export async function GET() {
   try {
     const notes = await listNotes();
     return NextResponse.json({ notes });
-  } catch (error: any) {
+  } catch (error:unknown) {
     return NextResponse.json({ error: error.message }, { status: 400 });
   }
 }

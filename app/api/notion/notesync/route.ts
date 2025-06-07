@@ -3,7 +3,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { listNotes } from "@/packages/integrations/notion/notesync/notesync.functions";
 
-export async function GET(_req: NextRequest) {
+export async function GET() {
   try {
     const notes = await listNotes();
     return NextResponse.json({ notes });

@@ -8,7 +8,7 @@ export type Todo = {
 }
 
 // In-memory list (will reset when server restarts)
-let todos: Todo[] = [
+const todos: Todo[] = [
   { id: 1, title: 'Learn Next.js', completed: false },
   { id: 2, title: 'Write Homework', completed: true },
   { id: 3, title: 'Go for a Walk', completed: false }

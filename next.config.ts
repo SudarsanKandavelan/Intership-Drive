@@ -1,5 +1,5 @@
 import path from "path";
-import { NextConfig } from "next";
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   webpack: (config) => {
@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
       "@": path.resolve(__dirname),
     };
     return config;
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
   },
 };
 

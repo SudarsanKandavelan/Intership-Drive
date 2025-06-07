@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useRef, MouseEvent } from 'react';
+import React from 'react';
 
 type Todo = {
   id: number;
